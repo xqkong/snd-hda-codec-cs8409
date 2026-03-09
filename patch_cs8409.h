@@ -342,6 +342,7 @@ struct sub_codec {
 struct cs8409_spec {
 	struct hda_gen_spec gen;
 	struct hda_codec *codec;
+	const struct hda_codec_ops *patch_ops;
 
 	struct sub_codec *scodecs[CS8409_MAX_CODECS];
 	unsigned int num_scodecs;
